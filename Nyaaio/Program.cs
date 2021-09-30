@@ -54,19 +54,17 @@ namespace Nyaaio
 
 using System;
 
-namespace PlanetCalculations
+namespace LowestNumber
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-            int userAge = 15;
-            double jupiterYears = 11.86;
-            double journeyToJupiter = 6.142466;
-            double newEarthAge = userAge + journeyToJupiter;
-            double newJupiterAge = newEarthAge / jupiterYears;
-            Console.WriteLine("Earth Age: " + newEarthAge);
-            Console.WriteLine("Jupter Age: " + newJupiterAge);
+            int numberOne = 12932;
+            int numberTwo = -2828472;
+            double numberOneSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberOne)));
+            double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo)));
+            Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
         }
     }
 }
