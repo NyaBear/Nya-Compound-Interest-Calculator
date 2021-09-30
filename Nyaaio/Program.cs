@@ -65,6 +65,7 @@ namespace LowestNumber
             double numberOneSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberOne)));
             double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo)));
             Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
+            Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
         }
     }
 }
