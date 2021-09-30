@@ -1,36 +1,4 @@
-﻿/* Default File's content
-using System;
-
-namespace Nyaaio
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            double number = 38498.3222;
-
-            string dinosaur = "Barney";
-
-            double a = 293.000;
-
-            bool yes = true;
-
-            string band = "The Low Anthem";
-        }
-    }
-}*/
-
-/*Here's what you learned:
-
-DATA TYPES: int, double, char, string, bool
-VARIABLES: datatype variableName = value;
-COMMON ERRORS: wrong type, wrong value, no semicolon
-DATA TYPE CONVERSION: implicit, explicit, methods
-
-Good luck! */
-
-/*
-using System;
+﻿using System;
 
 namespace Nyaaio
 {
@@ -38,34 +6,21 @@ namespace Nyaaio
     {
         private static void Main(string[] args)
         {
-            Console.Title = "Nya Aio | v0.1 | Alpha Phase";
+            Console.Title = "Nya Compound Interest Calculator";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("  _   _                  _    _       \n | \\ | |_   _  __ _     / \\  (_) ___  \n |  \\| | | | |/ _` |   / _ \\ | |/ _ \\ \n | |\\  | |_| | (_| |  / ___ \\| | (_) |\n |_| \\_|\\__, |\\__,_| /_/   \\_\\_|\\___/ \n        |___/                         \n");
+            Console.WriteLine("  _   _\n | \\ | |_   _  __ _\n |  \\| | | | |/ _` |\n | |\\  | |_| | (_| |\n |_| \\_|\\__, |\\__,_|\n        |___/\n");
             Console.ResetColor();
-            Console.Write(" Welcome to my 1st C# program, This program outputs a statement about you :D\n\n Please enter your name below: \n\n [ > ] ");
-            string name = Console.ReadLine();
-            Console.Write("\n Please enter your favourite number below: \n\n [ > ] ");
-            string favnum = Console.ReadLine();
-            Console.Write("\n Name: " + name + "\n\n Favourite Number: " + favnum + "\n");
-        }
-    }
-}
-*/
-
-using System;
-
-namespace LowestNumber
-{
-    internal class Program
-    {
-        private static void Main(string[] args)
-        {
-            int numberOne = 12932;
-            int numberTwo = -2828472;
-            double numberOneSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberOne)));
-            double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo)));
-            Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
-            Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write(" Compound Interest Rate Calculator!\n\n Enter your inital investement: \n\n [ > ] ");
+            var initial = Console.ReadLine();
+            Console.Write("\n Enter the rate ( % ) of your interest: \n\n [ > ] ");
+            var rate = Console.ReadLine();
+            Console.Write("\n Enter the length in ( years ) of your interest: \n\n [ > ] ");
+            var years = Console.ReadLine();
+            var total = Convert.ToInt32(initial) * Math.Pow(1 + Convert.ToInt32(rate), Convert.ToInt32(years));
+            Console.WriteLine("\n The total value of your $" + initial + " investement after " + years + " years @ " + rate + "% is $" + total + ".\n\n The program automatically end in 10 seconds.");
+            System.Threading.Thread.Sleep(10000);
+            Console.ResetColor();
         }
     }
 }

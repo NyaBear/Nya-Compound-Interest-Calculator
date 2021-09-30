@@ -1,8 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
-
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<ApplicationIcon>logo.ico</ApplicationIcon>
+		<PackageId>Nya X Compound Interest Rate Calculator</PackageId>
+		<Authors>NyaBear</Authors>
+		<Company>Clipping</Company>
+		<Product>Nya X Compound Interest Rate Calculator</Product>
+		<Description></Description>
+		<AssemblyName>Nya X Compound Interest Rate Calculator</AssemblyName>
+	</PropertyGroup>
 </Project>
